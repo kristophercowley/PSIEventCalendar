@@ -6,6 +6,11 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+// Calendar UI Module
+import { CalendarModule } from 'ion2-calendar';
+
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -16,8 +21,11 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    CalendarModule
   ],
   declarations: [HomePage]
 })
 export class HomePageModule {}
+
+//add date range
