@@ -7,11 +7,11 @@ import { CalendarComponentOptions } from 'ion2-calendar'
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-dateMulti:string[];
+dateRange: {from: string; to: string;};
 type:'string';
 
-optionsMulti: CalendarComponentOptions = {
-  pickMode: 'multi'
+optionsRange: CalendarComponentOptions = {
+  pickMode: 'range'
 };
 
   constructor() {}
